@@ -1,0 +1,19 @@
+{
+  "name": "dotclaude-sync",
+  "displayName": "dotclaude sync",
+  "version": "0.1.0",
+  "description": "Back up ~/.claude (settings, CLAUDE.md, skills, hooks, memory notes) to a private GitHub repo: commit and push after each Claude reply. Uses your existing gh login.",
+  "author": { "name": "oiegorov-embrace", "url": "https://github.com/oiegorov-embrace" },
+  "homepage": "https://github.com/oiegorov-embrace/dotclaude-sync",
+  "repository": "https://github.com/oiegorov-embrace/dotclaude-sync",
+  "license": "MIT",
+  "keywords": ["backup", "sync", "github", "dotfiles", "settings"],
+  "userConfig": {
+    "repo": {
+      "type": "string",
+      "title": "Backup repository",
+      "description": "GitHub repository for the backup, as owner/name. Leave empty to use <your gh login>/claude-config.",
+      "default": ""
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# dotclaude-sync whitelist: track only configuration, skills and memory notes.
+# Transcripts, prompt history, shell/env snapshots, caches and logs stay local.
+# To track another file or folder, add a "!/<name>" line below.
+/*
+!/.gitignore
+!/CLAUDE.md
+!/settings.json
+!/keybindings.json
+!/hooks/
+!/agents/
+!/commands/
+!/rules/
+!/output-styles/
+!/scheduled-tasks/
+
+!/skills/
+/skills/synced/
+
+# Memory notes (not transcripts). Delete these three lines to keep memory local.
+!/projects/
+/projects/*/*
+!/projects/*/memory/
+
+!/plugins/
+/plugins/*
+!/plugins/known_marketplaces.json
+
+.DS_Store
+*.lock
+*.log

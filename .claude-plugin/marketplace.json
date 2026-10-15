@@ -1,0 +1,14 @@
+{
+  "name": "dotclaude-sync",
+  "owner": {
+    "name": "oiegorov-embrace"
+  },
+  "description": "Back up ~/.claude to a private GitHub repo with your gh login.",
+  "plugins": [
+    {
+      "name": "dotclaude-sync",
+      "source": "./",
+      "description": "Back up ~/.claude to a private GitHub repo after each Claude reply, using your gh login."
+    }
+  ]
+}
