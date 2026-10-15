@@ -42,6 +42,16 @@ This plugin keeps each change in git and sends it to a private GitHub repository
 4. Select the **user** scope.
 5. In the settings form, leave **Backup repository** empty, or type `owner/name`.
 
+As an alternative, type these commands in a shell. Change `owner/name` to your repository, or remove `--config repo=owner/name`:
+
+```bash
+claude plugin marketplace add oiegorov-embrace/dotclaude-sync
+```
+
+```bash
+claude plugin install dotclaude-sync@dotclaude-sync --config repo=owner/name
+```
+
 **NOTE:** The Code tab of the Claude desktop app cannot install plugins. Install the plugin in a terminal. The desktop app then uses it in local sessions.
 
 ---
